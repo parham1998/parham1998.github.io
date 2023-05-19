@@ -10,22 +10,6 @@
     "use strict";
 
     /*---------------------------------------------------- */
-    /* Preloader
-    ------------------------------------------------------ */
-    $(window).load(function () {
-
-        // will first fade out the loading animation
-        $("#loader").fadeOut("slow", function () {
-
-            // will fade out the whole DIV that covers the website.
-            $("#preloader").delay(300).fadeOut("slow");
-
-        });
-
-    })
-
-
-    /*---------------------------------------------------- */
     /* FitText Settings
     ------------------------------------------------------ */
     setTimeout(function () {
@@ -39,19 +23,6 @@
     /* FitVids
     ------------------------------------------------------ */
     $(".fluid-video-wrapper").fitVids();
-
-
-    /*---------------------------------------------------- */
-    /* Owl Carousel
-    ------------------------------------------------------ */
-    $("#owl-slider").owlCarousel({
-        navigation: false,
-        pagination: true,
-        itemsCustom: [
-            [0, 1]
-        ],
-        navigationText: false
-    });
 
 
     /*----------------------------------------------------- */
@@ -273,7 +244,7 @@
     var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
 
     // Show or hide the sticky footer button
-    jQuery(window).scroll(function () {
+    $(window).scroll(function () {
 
         if (!($("#header-search").hasClass('is-visible'))) {
 
