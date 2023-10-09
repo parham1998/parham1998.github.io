@@ -1675,6 +1675,10 @@ header .top-bar {
     padding: 1.8rem 3.6rem 3rem;
 }
 
+#modal-demo .description-box {
+    padding: 0;
+}
+
 .popup-modal .description-box h4 {
     font-family: "poppins-bold", sans-serif;
     text-align: center;

@@ -97,6 +97,17 @@
         mainClass: 'mfp-fade'
 
     });
+	
+	$('.modal-job').magnificPopup({
+
+        type: 'inline',
+        fixedContentPos: true,
+        overflowY: 'hidden',
+        removalDelay: 300,
+        showCloseBtn: false,
+        mainClass: 'mfp-fade'
+
+    });
 
     $(document).on('click', '.popup-modal-dismiss', function (e) {
         e.preventDefault();
